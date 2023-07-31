@@ -52,6 +52,11 @@ pre {
     padding: 10px;
 }
 
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
 /* Navbar */
 .navbar {
     background-color: var(--primary-color);
@@ -100,7 +105,7 @@ pre {
 }
 
 .showcase-text {
-    animation: slideInFromLeft;
+    animation: slideInFromLeft 1s ease-in;
 }
 
 .showcase-form {
@@ -111,6 +116,7 @@ pre {
     padding: 40px;
     z-index: 100;
     justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in;
 }
 
 .showcase-form .form-control {
@@ -148,6 +154,7 @@ pre {
 /* Stats */
 .stats {
     padding-top: 100px;
+    animation: slideInFromBottom 1s ease-in;
 }
 
 .stats-heading {
@@ -326,11 +333,13 @@ pre {
     .showcase-text {
         text-align: center;
         margin-top: 40px;
+        animation: slideInFromTop 1s ease-in;
     }
 
     .showcase-form {
         justify-self: center;
         margin: auto;
+        animation: slideInFromBottom 1s ease-in;
     }
 
     .cli .grid > *:first-child {
